@@ -1,0 +1,787 @@
+/* ==========================================================================
+	Global
+	========================================================================== */
+
+*{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif, Helvetica;
+}
+
+a{
+	color: #000;
+}
+
+a:hover{
+	color: #666;
+}
+
+.rp-wrapper{
+	margin: 0 auto;
+	width: 960px;
+}
+
+.clear-float{
+	clear: both;
+}
+
+/* ==========================================================================
+	Header
+	========================================================================== */
+
+header#rp-main{
+	background: url(../img/header-bg.png) top left repeat;
+	border-bottom: 1px solid #000;
+	padding: 0 0 10px 0;
+}
+
+/* =======================
+	Top Navigation
+	======================= */
+
+nav#rp-top-nav{
+	height: 30px;
+	padding: 3px 0 0 0;
+	text-align: center;
+}
+
+nav#rp-top-nav ul{
+	list-style-position: inside;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav#rp-top-nav ul li{
+ 	float: left;
+}
+
+nav#rp-top-nav a{
+	font-size: 0.687em; /* 11px / 16px  */
+	font-weight: bold;
+	line-height: 30px;
+	padding: 0 7px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+li.ms-more-menu{
+	position: relative;
+}
+
+ul.ms-menu ul.ms-sub-menu{
+	background: #FFF;
+	border: 1px solid #000;
+	display: none;
+	padding: 0;
+	position: absolute;
+	top: 26px;
+	right: 5px;
+	width: 150px;
+}
+
+ul.ms-menu ul.ms-sub-menu li{
+	width: 100%;
+}
+
+ul.ms-menu ul.ms-sub-menu li a{
+	border: none;
+	display: block;
+	margin: 0;
+	text-align: left;
+}
+
+ul.ms-menu ul.ms-sub-menu li a:hover{
+	background-color: #000;
+	color: #FFF;
+};
+
+#rp-top-search{
+	float: right;
+	margin: 8px 0 0 0;
+}
+
+/* =======================
+	Search
+	======================= */
+
+.rp-search{
+	float: right;
+	height: 25px;
+	margin: 8px 0 0 0;
+}
+
+input.rp-search-text{
+	border: 1px solid #000;
+	font-size: 0.75em; /* 12px / 16px  */
+	float: left;
+	height: 20px;
+	padding: 2px 5px;
+	margin: 0 5px 0 0;
+}
+
+input.rp-search-submit{
+	background-color: #EEE;
+	border: 1px solid #000;
+	float: left;
+	font-size: 0.75em; /* 12px / 16px  */
+	font-weight: bold;
+	height: 20px;
+	padding: 0 3px;
+	text-transform: uppercase;
+}
+
+input.rp-search-submit:hover{
+	background-color: #DDD;
+}
+
+/* =======================
+	Branding
+	======================= */
+
+a#rp-logo{
+	display: block;
+	float: left;
+	height: 90px;
+	width: 400px;
+}
+
+a#rp-logo img{
+	height: 100%;
+	width: 100%;
+}
+
+header#rp-main h1{
+	clear: both;
+	color: #555;
+	font-size: 1.125em; /* 18px / 16px  */
+	font-weight: normal;
+	padding: 0;
+	margin: 100px 0 0 0;
+}
+
+header#rp-main h2{
+	clear: both;
+	color: #000;
+	font-size: 0.812em; /* 13px / 16px  */
+	font-weight: normal;
+	margin: 5px 0 0 0;
+	padding: 0;
+}
+
+#rp-menu-jump{
+	display: none;
+}
+
+/* =======================
+	Contact Info
+	======================= */
+
+#rp-top-contact{
+	float: right;
+	font-size: 1em; /* 16px / 16px  */
+	margin: 20px 0 0 0;
+}
+
+#rp-top-contact a{
+	text-decoration: none;
+}
+
+#rp-top-email, #rp-top-phone, #rp-top-fax{
+	height: 28px;
+	line-height: 28px;
+}
+
+#rp-top-email, #rp-top-phone{
+	float: left;
+}
+
+#rp-top-email{
+	margin: 0 20px 0 0;
+}
+
+#rp-top-phone{
+	font-size: 1.25em; /* 20px / 16px  */
+	font-weight: bold;
+}
+
+#rp-top-fax{
+	clear: both;
+	float: right;
+	font-size: 1em; /* 16px / 16px  */
+	font-weight: bold;
+	margin: 5px 0 0 0;
+}
+
+#rp-top-email-icon, #rp-top-phone-icon{
+	display: block;
+	float: left;
+	height: 26px;
+	margin: 0 10px;
+	width: 26px;
+}
+
+#rp-top-email-text, #rp-top-phone-text{
+	float: left;
+}
+
+#rp-top-email-icon{
+	background: url(../img/email-icon.png) center center no-repeat;
+}
+
+#rp-top-email-icon:hover{
+	background: url(../img/email-icon-hover.png) center center no-repeat;
+}
+
+#rp-top-phone-icon{
+	background: url(../img/phone-icon.png) center center no-repeat;
+}
+
+#rp-top-phone-icon:hover{
+	background: url(../img/phone-icon-hover.png) center center no-repeat;
+}
+
+/* ==========================================================================
+	Body
+	========================================================================== */
+
+#rp-content{
+	float: right;
+	width: 780px;
+}
+
+#rp-content h1{
+	color: #535353;
+	font-size: 1em; /* 16px / 16px  */
+	margin: 14px 0;
+}
+
+#rp-content p{
+	color: #7b7b7b;
+	font-size: 0.875em; /* 14px / 16px  */
+	line-height: 21px;
+	margin: 14px 0;
+}
+
+/* =======================
+	Left Navigation
+	======================= */
+
+#rp-left-nav{
+	float: left;
+	margin: 0 0 20px 0;
+	width: 180px;
+}
+
+#rp-left-nav h1{
+	border-bottom: 1px solid #7b7b7b;
+	font-size: 0.687em; /* 11px / 16px  */
+	height: 29px;
+	line-height: 29px;
+	margin: 10px 0;
+	padding: 0;
+	text-align: left;
+	text-transform: uppercase;
+	width: 140px;
+}
+
+nav.rp-left-nav-menu a{
+	color: #7b7b7b;
+	display: block;
+	font-size: 0.75em; /* 12px / 16px  */
+	line-height: 16px;
+	margin: 0 0 5px 0;
+	text-decoration: none;
+}
+
+nav.rp-left-nav-menu a:hover{
+	text-decoration: underline;
+}
+
+/* =======================
+	RFQ Button
+	======================= */
+
+a#rp-rfq-top{
+	float: right;
+	margin: 0 0 10px 40px;
+}
+
+a#rp-rfq-bottom{
+	display: none;
+}
+
+a#rp-rfq{
+	float: right;
+	margin: 10px 0;
+}
+
+a.rp-rfq{
+	background: #0139a3 url(../img/button-bg.png) center top repeat-x;
+	border: 10px solid #EEE;
+	border-radius: 50px;
+	color: #FFF !important;
+	font-size: 0.875em; /* 14px / 16px  */
+	font-weight: bold;
+	line-height: 35px;
+	padding: 0 40px;
+	position: relative;
+	text-decoration: none !important;
+	text-transform: uppercase;
+
+}
+
+a.rp-rfq:hover{
+	color: #EEE !important;
+}
+
+.rp-rfq-text{
+	border-right: 1px solid #666;
+	padding: 0 20px 0 0;
+}
+
+img.rp-rfq-arrow{
+	padding: 3px 0 0 10px;
+	position: absolute;
+	right: 17px;
+	top: 7px;
+}
+
+/* =======================
+  .rp-menus
+	======================= */
+
+.rp-menu h1{
+	border-bottom: 1px solid #000;
+	font-size: 0.812em; /* 13px / 16px  */
+	padding: 0 0 5px 0;
+	text-transform: uppercase;
+}
+
+.rp-menu .rp-arrow{
+	display: none;
+}
+
+.rp-menu{
+	float: left;
+	padding: 10px 0;
+	width: 48%;
+}
+
+.rp-menu ul{
+	list-style-position: inside;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.rp-menu ul li a{
+	background: url(../img/menu-bullet.png) 5px 8px no-repeat;
+	color: #7b7b7b;
+	float: left;
+	font-size: 0.75em; /* 12px / 16px  */
+	line-height: 24px;
+	padding: 0 0 0 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 50%;
+}
+
+.rp-menu ul li a:hover{
+	text-decoration: underline;
+}
+
+.rp-menu-sep{
+	float: left;
+	height: 10px;
+	width: 2%;
+}
+
+/* ==========================================================================
+	Footer
+	========================================================================== */
+
+footer#rp-main{
+	border-top: 6px solid #000;
+	clear: both;
+}
+
+footer#rp-main a{
+	color: #7b7b7b;
+	text-decoration: underline;
+}
+
+footer#rp-main a:hover{
+	text-decoration: none;
+}
+
+/* =======================
+	Bottom Navigation
+	======================= */
+
+nav#rp-bottom-nav{
+	display: none;
+}
+
+nav#rp-bottom-nav-sitemap{
+	float: right;
+	font-size: 0.75em; /* 12px / 16px  */	
+	line-height: 24px;
+}
+
+nav#rp-bottom-nav-sitemap a{
+	padding: 0 10px;
+}
+
+/* =======================
+	Bottom Search
+	======================= */
+
+#rp-bottom-search{
+	display: none;
+}
+
+/* =======================
+	Bottom Info
+	======================= */
+
+#rp-bottom-contact{
+	font-size: 0.687em; /* 11px / 16px  */
+}
+
+#rp-bottom-contact div{
+	display: inline;
+	line-height: 24px;
+	padding: 0 7px;
+}
+
+#rp-bottom-contact .rp-bottom-company{
+	font-weight: bold;
+}
+
+#rp-copyright-info{
+	font-size: 0.75em; /* 12px / 16px  */
+	line-height: 24px;
+	margin: 10px 0 0 0;
+	text-align: right;
+}
+
+#rp-copyright-info #rp-thomas-info{
+	display: inline;
+	margin: 0 0 0 14px;
+}
+
+/* ==========================================================================
+	Mobile CSS
+	========================================================================== */
+
+@media only screen AND (max-width: 480px){
+
+	.rp-wrapper{
+		width: 100%;
+	}
+
+	header#rp-main .rp-wrapper{
+		padding: 0 10px;
+	}
+
+	a#rp-logo{
+		height: 80px;
+		margin: 5px 1.5%;
+		width: 97%;
+	}
+	header#rp-main h1{
+		clear: both;
+		font-size: 1em; /* 16px / 16px  */
+		margin: 0;
+		padding: 0;
+		text-transform: none;
+	}
+
+	header#rp-main h2{
+		margin: 3px 0 0 0;
+		padding: 0;
+		text-transform: none;
+		width: auto;
+	}
+
+	nav#rp-top-nav{
+		display: none;
+	}
+
+	#rp-top-search{
+		display: none;
+	}
+
+	#rp-menu-jump{
+		display: block;
+		float: left;
+	}
+
+	#rp-menu-jump-icon{
+		display: block;
+		height: 26px;
+		margin: 5px 10px 0 10px;
+		width: 26px;
+	}	
+
+	#rp-top-contact{
+		margin: 5px 0 0 0;
+	}  
+
+	#rp-top-email-icon, #rp-top-phone-icon{
+		display: inline;
+		margin: 0 10px 0 0;
+	}
+
+	#rp-menu-jump-icon{
+		background: url(../img/menu-icon.png) center center no-repeat;
+	}
+
+	#rp-menu-jump-icon:hover{
+		background: url(../img/menu-icon-hover.png) center center no-repeat;
+	}
+
+	#rp-top-email{
+		margin: 0;
+	}
+
+	#rp-top-fax{
+		display: none;
+	}
+
+	#rp-top-email-text{
+		display: none;
+	}
+
+	#rp-top-phone-text-label{
+		display: none;
+	}  
+
+	#rp-left-nav{
+		display: none;
+	}
+
+	#rp-content{    
+		float: none;
+		width: 100%;
+	}
+
+	#rp-content-wrap{
+		padding: 0 10px;
+	}
+
+	#rp-content h1{
+		position: relative;
+	}
+
+	a#rp-rfq-top{
+		display: none;
+	}
+
+	.rp-menu .rp-arrow{
+		background: url(../img/arrow-menu-up.png) center center no-repeat;
+		display: block;
+		height: 8px;
+		position: absolute;
+		bottom: 15px;
+		right: 15px;
+		width: 12px;
+	}
+
+	.rp-menu{
+		background: #fff;  
+		float: none;
+		height: auto;
+		margin: 0 0 20px 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	.rp-menu h1{
+		clear: both;
+		cursor: pointer;
+		display: block;
+		font-size: 1em; /* 16px / 16px  */
+		padding: 10px 40px 10px 10px;
+		margin: 0;
+	}
+
+	.rp-menu ul{
+		display: none;
+		padding: 10px;
+	}
+
+	a#rp-rfq-bottom{
+		display: block;
+		margin: 20px 10px;
+	}
+
+	a#rp-rfq{
+		display: none;
+	}
+
+	footer#rp-main{
+		text-align: center;
+	}
+
+	footer#rp-main .rp-wrapper{
+		padding: 10px 20px;
+	}
+
+	.rp-rfq-textfield label{
+		width: 100%;
+		margin: 0;
+		float: none;
+		text-align: left;
+	}
+
+	.rp-rfq-textfield input{
+		width: 100%;
+		margin: 0;
+		float: none;
+	}
+
+	.rp-rfq-option{
+		width: 100%;
+		float: none;
+	}
+
+	#rp-bottom-search{
+		display:  block;
+		float: none;
+	}
+
+	.rp-search{
+		height: 30px;
+	}
+
+	input.rp-search-text{
+		border: 1px solid #000;
+		font-size: 0.75em; /* 12px / 16px  */
+		float: left;
+		height: 30px;
+		margin: 0 2% 0 0;
+		width: 83%;
+	}
+
+	input.rp-search-submit{
+		float: left;
+		height: 30px;
+		width: 15%;
+	}   
+
+	nav#rp-bottom-nav{
+		display: block;
+		margin: 20px 0;
+	}
+
+	nav#rp-bottom-nav ul{
+		padding: 0;
+		margin: 0;
+	}
+
+	nav#rp-bottom-nav li{
+		float: left;
+		text-align: left;
+		width: 50%;
+	}
+
+	nav#rp-bottom-nav li a{
+		font-size: 0.821em; /* 13px / 16px  */
+		font-weight: bold;
+		line-height: 26px;
+		text-decoration: none;
+		text-transform: uppercase;
+	}   
+
+	nav#rp-bottom-nav-sitemap{
+		float: none;
+	}
+
+	nav#rp-bottom-nav-sitemap a{
+		padding: 0 10px;
+	}   
+
+	#rp-bottom-contact div{
+		display: none;
+	}
+
+	#rp-copyright-info{
+		text-align: center;
+		line-height: 20px;
+		margin: 0;
+	}
+
+	#rp-copyright-info #rp-thomas-info{
+		display: block;
+		margin: 0;
+	}
+}
+
+/* ==========================================================================
+	Tablet CSS
+	========================================================================== */
+
+@media only screen AND (min-width: 480px) AND (max-width: 1024px){
+
+	.rp-wrapper{
+		padding: 0 10px;
+		width: 100%;
+	}
+
+	#rp-top-contact{
+		margin: 0;
+	}
+
+	#rp-top-search{
+		display: none;
+	}
+
+	#rp-top-fax{
+		display: none;
+	}
+
+	#rp-top-email{
+		margin: 0;
+	}
+
+	#rp-top-email-text{
+		display: none;
+	}
+
+	#rp-top-phone-text-label{
+		display: none;
+	}          
+
+	#rp-left-nav{
+		display: none;
+	}
+
+	#rp-toolbar{
+		display: none;
+	}
+
+	#rp-content{
+		float: none;
+		padding: 10px 0;
+		width: 100%;
+	}
+
+	.rp-menu{
+		float: none;
+		height: auto;
+		padding: 0 0 10px 0;
+		margin: 0;
+		width: 100%;
+	}
+
+	footer#rp-main{
+		text-align: center;
+	}
+
+	nav#rp-bottom-nav-sitemap{
+		float: none;
+	}
+}
